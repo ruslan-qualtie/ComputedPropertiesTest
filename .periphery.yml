@@ -1,0 +1,7 @@
+workspace: ComputedPropertiesTest.xcworkspace
+
+schemes:
+  - ComputedPropertiesTest
+
+targets:
+  - ComputedPropertiesTest

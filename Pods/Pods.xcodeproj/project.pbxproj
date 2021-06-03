@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = "Periphery-framework";
-			productName = "Periphery-framework";
 		};
 		FBD0E12A5DE476C0E03511F3CDF27803 /* Periphery-library */ = {
 			isa = PBXAggregateTarget;
@@ -25,7 +24,6 @@
 			dependencies = (
 			);
 			name = "Periphery-library";
-			productName = "Periphery-library";
 		};
 /* End PBXAggregateTarget section */
 
@@ -47,11 +45,11 @@
 
 /* Begin PBXFileReference section */
 		05730945ABE4CE21B354D3626AA0BDD8 /* Pods-ComputedPropertiesTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ComputedPropertiesTest-acknowledgements.plist"; sourceTree = "<group>"; };
-		5AEB979D2267E65C1A8396A83CAF3368 /* Pods_ComputedPropertiesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputedPropertiesTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AEB979D2267E65C1A8396A83CAF3368 /* Pods_ComputedPropertiesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ComputedPropertiesTest.framework; path = "Pods-ComputedPropertiesTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92866D27D81113DF427DF94511729A8F /* Periphery-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Periphery-library.debug.xcconfig"; path = "../Periphery-library/Periphery-library.debug.xcconfig"; sourceTree = "<group>"; };
 		99B7327CA3EE8E42DF86E65403E08BB1 /* Pods-ComputedPropertiesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComputedPropertiesTest.release.xcconfig"; sourceTree = "<group>"; };
 		9A00C4E91A5DBEBAF6CD4EA1E56F66FB /* Pods-ComputedPropertiesTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ComputedPropertiesTest-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AF81389098995E925C7858DC4674C0D7 /* Pods-ComputedPropertiesTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ComputedPropertiesTest.modulemap"; sourceTree = "<group>"; };
 		B94D4F201425B8752BF1DEE962083D9A /* Pods-ComputedPropertiesTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ComputedPropertiesTest-dummy.m"; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -132,6 +130,7 @@
 			children = (
 				77E1904BA2B4DE47640AA546CB5CC0E6 /* Support Files */,
 			);
+			name = Periphery;
 			path = Periphery;
 			sourceTree = "<group>";
 		};
@@ -202,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -260,6 +259,7 @@
 			baseConfigurationReference = FFF05A6CD1C6B17BC5414FC544D849D5 /* Pods-ComputedPropertiesTest.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -295,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C71B97302F3F625CBC70590C35391F47 /* Periphery-library.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -313,6 +314,7 @@
 			baseConfigurationReference = 99B7327CA3EE8E42DF86E65403E08BB1 /* Pods-ComputedPropertiesTest.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -348,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D10AC20CF679A0F3F0CF2D34E1565760 /* Periphery-framework.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -356,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -365,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C422AD70DDDAFD5E34C4F372AFB7BA64 /* Periphery-framework.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -373,7 +377,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -510,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92866D27D81113DF427DF94511729A8F /* Periphery-library.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
